@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Administrador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Encabezado -->
+    <header class="bg-white/60 backdrop-blur-lg shadow-md p-5  w-full z-10 flex justify-between">
+        <h1 class="text-3xl font-bold text-gray-700">Dashboard de Administrador</h1>
+        
+        <div>
+            <label for="usuarioSelect">Cambiar usuario:</label>
+            <select id="usuarioSelect" class="ml-2" onchange="cambiarUsuario()">
+                <option value="usuario1.html">juan</option>
+                <option value="usuario2.html">Ana</option>
+                <option value="usuario3.html">Luis</option>
+            </select>
+        </div>
+    </header>
+    <script src="cambio_usuario.js"></script>
+
+    <!-- Contenido Principal -->
+    <main class="mt-24 max-w-5xl mx-auto p-5 space-y-8">
+
+       
+            <!-- Botón que muestra el formulario de notificaciones -->
+           
+            <!-- Sección de notificaciones y formulario -->
+            <div id="notificacionesContainer" class="mt-4">
+                <section class="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-3">Notificaciones</h2>
+                    <a href="#" class="text-blue-600 hover:underline" onclick="mostrarFormulario()">Agregar Notificación</a>
+                    <ul class="list-disc ml-5 text-gray-700">
+                    
+                    </ul>
+                </section>
+                <!-- Contenedor donde se mostrará el formulario de notificaciones -->
+                <div id="formulario-container" class="mt-4"></div>
+            </div>
+        </li>
+        <script src="form_notification.js"></script>
+
+        <!-- Recursos Humanos -->
+        <section class="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Recursos Humanos</h2>
+            <ul class="list-disc ml-5 text-gray-700">
+                <li>Beneficios</li>
+                <li>Vacaciones y permisos</li>
+                <li>Otros temas relacionados con la gestión de personal</li>
+            </ul>
+        </section>
+
+        <!-- Departamento de Tecnología -->
+        <section class="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Departamento de Tecnología</h2>
+            <ul class="list-disc ml-5 text-gray-700">
+                <li>Notificaciones sobre cambios en la tecnología y sistemas de la empresa</li>
+                <li>Notificaciones sobre la implementación de nuevos software o hardware</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-200 text-center py-5 text-gray-600">
+        &copy; 2024 Dashboard de Administrador
+    </footer>
+
+</body>
+</html>
